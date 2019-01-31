@@ -216,3 +216,8 @@ go to your instance on [Lightsail](https://lightsail.aws.amazon.com/) then click
 ### created by
 
 * Mahmoud Adel
+
+### Resources
+[postgresql connection](https://docs.sqlalchemy.org/en/latest/core/engines.html#postgresql) 
+
+[error log file](https://unix.stackexchange.com/questions/38978/where-are-apache-file-access-logs-stored)
