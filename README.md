@@ -6,7 +6,7 @@ installing/configuring web and database servers
 
 ## About
 Ip address : 35.176.76.41   
-ssh port : 2200
+ssh port : 2200  
 passowrd of grader user : 123456
 
 ## Get Your Server
