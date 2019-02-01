@@ -5,7 +5,7 @@ securing the system from a number of attack vectors and
 installing/configuring web and database servers
 
 ## About
-Ip address : 35.176.76.41   
+Ip address : 3.8.117.25   
 ssh port : 2200
 
 ## Get Your Server
@@ -28,7 +28,7 @@ Ubuntu16.04 LTS instance on AWS [Amazon Lightsail](https://lightsail.aws.amazon.
 
 * Connect to instance.
 
-        ssh -i ~/.ssh/key.pem ubuntu@35.176.76.41
+        ssh -i ~/.ssh/key.pem ubuntu@3.8.117.25
 
 ### Update
 
@@ -38,10 +38,6 @@ Ubuntu16.04 LTS instance on AWS [Amazon Lightsail](https://lightsail.aws.amazon.
 ### Create New User grader
     
         sudo adduser gader
-
-* Add To Superuser
-
-        sudo usermod -aG sudo grader
 
 * Add grader to sudo group
         
@@ -98,7 +94,7 @@ go to your instance on [Lightsail](https://lightsail.aws.amazon.com/) then click
 
 ### connect again using command on local
 
-        ssh grader@35.176.76.41 -p 2200 -i ~/.ssh/grader
+        ssh grader@3.8.117.25 -p 2200 -i ~/.ssh/grader
 
 ### Configure the Firewall
 
@@ -154,6 +150,15 @@ go to your instance on [Lightsail](https://lightsail.aws.amazon.com/) then click
 
         create_engine('postgresql://catalog:123456@localhost/catalog')
 
+* Install dependencies
+
+        pip3 install httplib2
+        pip3 install requests
+        pip3 install --upgrade oauth2client
+        pip3 install sqlalchemy
+        pip3 install flask
+        pip3 install psycopg2
+
 * Run `models.py`
 
         python3 models.py
@@ -188,10 +193,10 @@ go to your instance on [Lightsail](https://lightsail.aws.amazon.com/) then click
 * Add this content
 
         <VirtualHost *:80>
-                ServerName servername e.g(35.176.76.41)
+                ServerName servername e.g(3.8.117.25)
                 ServerAdmin email e.g(hhh_hhh152001@yahoo.com)
                 WSGIScriptAlias / /var/www/catalog/itemscatalog.wsgi
-                <Directory /var/www/catalog/catalog/>
+                <Directory /var/www/catalog/>
                         Order allow,deny
                         Allow from all
                 </Directory>
@@ -211,7 +216,7 @@ go to your instance on [Lightsail](https://lightsail.aws.amazon.com/) then click
         sudo apache2ctl restart
 
 ### Visit your website
-[Store App](http://35.176.76.41)
+[Store App](http://3.8.117.25)
 
 ### created by
 
