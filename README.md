@@ -89,8 +89,8 @@ go to your instance on [Lightsail](https://lightsail.aws.amazon.com/) then click
         sudo nano /etc/ssh/sshd_config
 
 * update port to 2200
-* update PermitRootLogin to be yes
-* update PasswordAuthentication to be yes
+* update PermitRootLogin to be no
+* update PasswordAuthentication to be no
 
 ### Restart ssh
 
