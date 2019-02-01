@@ -6,8 +6,7 @@ installing/configuring web and database servers
 
 ## About
 Ip address : 35.176.76.41   
-ssh port : 2200  
-passowrd of grader user : 123456
+ssh port : 2200
 
 ## Get Your Server
 Ubuntu16.04 LTS instance on AWS [Amazon Lightsail](https://lightsail.aws.amazon.com/).
